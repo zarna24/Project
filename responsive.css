@@ -1,0 +1,57 @@
+
+@media (max-width: 575.98px) { 
+    #studentsStatistics{
+        height: auto;
+    }
+    .daysContainer{
+        width: 100%;
+    }
+    .buttonsContainer{
+       margin-right: 80px;
+    }
+    .buttonsContainer > a{
+        display: inline-block;
+        margin-top:20px;
+    }
+    #students{
+        padding: 0;
+        margin: 0;
+    }
+    .studentTitles{
+        padding: 0;
+    }
+    .blockTitle{
+        margin-top:40px;    
+    }
+ }
+
+
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    #studentsStatistics{
+        height:  334px;
+       
+    }
+
+    .buttonsContainer{
+        margin-right: 80px;
+     }
+     .buttonsContainer > a{
+         display: inline-block;
+         margin-top:20px;
+     }
+  }
+
+@media (min-width: 992px) and (max-width: 1237.98px) {
+    #studentsStatistics{
+        height: auto;
+    }
+    .buttonsContainer{
+        margin-right: 80px;
+     }
+     .buttonsContainer > a{
+         display: inline-block;
+         margin-top:20px;
+     }
+ }
+

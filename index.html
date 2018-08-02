@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+</head>
+<body>
+    <div class="main-container">
+            <div id="studentsStatistics">
+                    <h3 class="blockTitle">Student Statistics</h3>
+                    <div>Total Days <span id="totalDays"></span></div>
+                    <div>Average Mark <span id="averageMarks"></span></div>
+                    <div>Total Students <span id="totalStudents"></span></div>
+                    <div>Missed Lessons <span id="totalMissedLessons"></span></div>
+                </div>
+            <div class="blockContainer">
+                    <h3 class="blockTitle">
+                        Student Marks
+                    </h3>
+                    <div class="studentTitles">
+                            <span>Students Name</span>
+                            <span>Avarage</span>
+                    </div>
+                    <div id="students"></div>
+            </div>
+            <div class="blockContainer daysContainer">
+                    <h3 class="blockTitle">
+                           Days
+                        </h3>
+                    <div id="days"></div>
+            </div>
+         
+           <div class="buttonsContainer">
+            <a href="javascript:" class="button" onclick="addDay()">Add</a>
+            <a href="javascript:" class="button" onclick="removeDays()">Romove </a>
+            <a href="javascript:" class="button" onclick="updateStatistics()">Update</a>
+           </div>
+    </div>
+
+
+
+
+
+
+
+<div id="studentsTemplate">
+   
+    <div class="stundetMark">
+            <div class="stundetName">@name </div>
+            <div class="average">@average</div>
+    </div>
+</div>
+<div id="studentsDaysTemplate">
+    <div class="studentDayColumn">
+        <div class="studentDayDate">
+                @date
+        </div>
+        <div class="studentsMarks">
+            <div class="studentMark">
+                <input type="number"  value="@mark" data-day-date="@dayDate" data-student-id="@studentId" onchange="updateStudentMark(this)">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
